@@ -40,7 +40,7 @@ class Point2 {
 };
 
 // point is object //  object is instace in all class
-let point2 = new Point();
+let point2 = new Point2(1, 2);
 point2.draw();
 
 
@@ -48,7 +48,22 @@ point2.draw();
     // public
     // private
     //protected
-    
 
+
+class Point3 {
+
+    constructor(public x?:number, private y?:number){}
+
+    draw(){
+        console.log(' X: ' + this.x + ' Y: ' + this.y);
+    };
+    getDistance(another: Point){
+
+    }
+};
+
+let point3 = new Point3(1, 2);
+point3.x = 3;
+point3.draw();
 
 
